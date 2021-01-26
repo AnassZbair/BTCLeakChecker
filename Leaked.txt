@@ -1,0 +1,1 @@
+Leaked BTC Addresses will be saved in this file.
