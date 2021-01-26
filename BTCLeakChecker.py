@@ -8,7 +8,7 @@ for line in Lines:
     data = {'address': {line}}
     response = requests.post('https://allprivatekeys.com/check_address.php', data)
     if response.text.__contains__("Congratulation!"):
-        print colored("Not Leaked ", "green")
+        print colored("Not Leaked !", "green")
     elif response.text.__contains__("DANGER:"):
         print colored("Leaked !", "red")
     else:
