@@ -11,6 +11,10 @@ for line in Lines:
         print colored("Not Leaked !", "green")
     elif response.text.__contains__("DANGER:"):
         print colored("Leaked !", "red")
+        f = open("Leaked.txt", "a")
+        f.write("\n")
+        f.write(line)
+        f.close()
     else:
         print colored("Wrong BTC address !", "yellow")
 file1.close()
